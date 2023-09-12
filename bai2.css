@@ -1,0 +1,148 @@
+*   {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    padding: 20px 0;
+    background-color: lightgrey;
+    position: sticky;
+    top: 0;
+}
+
+#mobile_nav {
+    display: none;
+}
+
+.dsktop_link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 15px 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h2,h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.view {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#view_portfolio {
+    padding: 5px 10px;
+}
+
+#nav_btn {
+    display: none;
+}
+
+.welcome, .about_me {
+    margin: 50px 0;
+}
+
+.work_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile_work_list {
+    display: none;       
+}
+
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 420px) {
+    .work_list {
+        display: none;
+    }
+
+    .mobile_work_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dsktop_link {
+        display: none;
+    }
+
+    #mobile_nav_bar {
+        text-align: right;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    #nav_btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        transform: translateX(-100%);
+    }
+
+    #nav_btn:hover {
+        background-color: grey;
+    }
+
+    #mobile_nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #mobile_nav_bar:hover #mobile_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile_link {
+        border: 2px solid black;
+        padding: 10px 0;
+        width: 60%;
+        text-align: center;
+        margin: 4px 0;
+        border-radius: 4px;
+        background-color: black;
+    }
+    
+    a {
+        color: wheat;
+        text-decoration: none;
+    }
+    
+}
